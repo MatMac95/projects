@@ -1,0 +1,10 @@
+Prepare the game "Sapper":
+
+1) download the HTML skeleton (link in the episode description)
+2) attach listeners to all fields (using event propagation)
+3) all fields are hidden by default (CSS)
+4) after clicking on the field it is shown (CSS)
+5) if
+   a) the field has points - add to the data-points pool
+   b) the field is a bomb - show the message "Game over"
+6) when you get 150 points, display the message "You won!"
