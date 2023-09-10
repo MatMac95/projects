@@ -7,6 +7,11 @@
   <title>Name Letters</title>
 </head>
 
+<% if (locals.data) { %>
+  <h1> Number of letters: <%= data %></h1>
+  <% } else {%>
+<h1>Please submit the form</h1>
+<% } %>
 <body>
   <!-- Write your code here -->
   <form action="/submit" method="POST">
