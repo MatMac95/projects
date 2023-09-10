@@ -13,12 +13,22 @@ const port = 3000;
 //Hint: Google to find out how to get the current year using JS.
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
+const chooseRandomItem = (array) => {
+  let random = Math.floor(Math.random() * array.length);
+  return array[random];
+};
 
 app.get("/", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
+  res.render("index.ejs");
 });
 
 app.post("/submit", (req, res) => {
+  let result = {};
+  result.Adj = chooseRandomItem(adj);
+  result.Noun = chooseRandomItem(noun);
+  res.render("index.ejs", { result });
   //Step 2 - Make the generate name functionality work
   //Hint: When the "Generate Name" button in index.ejs is clicked, it should hit up this route.
   //Then:
