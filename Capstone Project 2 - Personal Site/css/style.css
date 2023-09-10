@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "ITCZapfChanceryRoman";
+    src: local("ITCZapfChanceryRoman"),
+    url("../fonts/ITCZapfChanceryRoman.otf");
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {  
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo {    
+    
+    min-height: 150px;
+    max-height: 200px;
+    border-radius: 30px; 
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5cb6f987;
+    height: 50vh;
+    
+
+}
+
+h1 {
+    text-align: center;
+    font-family: ITCZapfChanceryRoman;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #006FAD;
+}
+
+.resume-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 15vh;
+}
+
+
+
+.resume-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    height: 35vh;
+}
+
+.resume-item{
+    display: flex;
+    min-width: 275px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+   
+}
+
+.portfolio{
+    background-color: #f9765c33;
+}
+
+.portfolio-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 15vh;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.portfolio-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px 0 15px 0;
+}
+
+
+.portfolio-image {
+    height: 300px;
+    width: 320px;
+    object-fit: cover;
+   
+}
+
+.about {
+    background-color: #f9765c33;
+}
+
+.about-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 15vh;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.paragraph {
+    max-width: 25vw;
+}
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0 5px 20px;
+    
+}
+.email {
+    text-decoration: none;
+    color: black;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 860px) {
+
+    .resume-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .portfolio-image {
+        width: 50vw;
+    }
+}
