@@ -1,17 +1,15 @@
-exports.getDate = ()=>{
+exports.getDate = () => {
+  const date = new Date();
 
-const date = new Date();
+  const options = { weekday: "long", day: "numeric", month: "long" };
 
-const options = {weekday: 'long', day: 'numeric', month: 'long'};
+  return date.toLocaleDateString("en-EN", options);
+};
 
-return date.toLocaleDateString('en-EN', options);
-}
+exports.getDay = () => {
+  const date = new Date();
 
-exports.getDay = ()=>{
+  const options = { weekday: "long" };
 
-    const date = new Date();
-    
-    const options = {weekday: 'long'};
-    
-    return date.toLocaleDateString('en-EN', options);
-    }
+  return date.toLocaleDateString("en-EN", options);
+};
